@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chivo+Mono:wght@100&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,100;1,9..40,200&family=Inconsolata:wght@200;300;400&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100;200;300;400&family=Teko:wght@500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html body{
+  font-family: 'Anton', sans-serif;
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Courgette', cursive;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.gg_logo{
+  height: 40px;
+  object-fit: contain;
+}
+
+.navigator{
+  /* background-color: rgba(0, 0, 0, 0); */
+  z-index: 9;
+}
+
+.col-md-1{
+  height: 100px;
+  background-color: green;
+  margin: 1rem;
+}
+
+.video-container{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -9;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.shader{
+  width:100%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.697);
+  position: absolute;
+}
+
+.navItems{
+  color: white;
+}
+
+.title-1{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  font-size: 150px;
+}
+
+.sub-title{
+  color: white;
+  font-size: 40px;
+  line-height:-20rem;
+  letter-spacing: 15px;
+  position: absolute;
+  top: 75%;
+  left: 11%;
+}
+
+.about-event{
+  width: 100%;
+  height: 90vh;
+}
+
+.about-container{
+  width: 100vw;
+  height: 100vh;
+  margin: 1rem;
+}
+
+.about-section-title{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

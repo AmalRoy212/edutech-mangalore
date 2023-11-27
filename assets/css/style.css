@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Chivo+Mono:wght@100&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,100;1,9..40,200&family=Inconsolata:wght@200;300;400&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100;200;300;400&family=Teko:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
 *{
   padding: 0;
   margin: 0;
 }
 
-html body{
-  font-family: 'Anton', sans-serif;
-  font-family: 'Chivo Mono', monospace;
-  font-family: 'Courgette', cursive;
-  font-family: 'DM Sans', sans-serif;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Mukta', sans-serif;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  font-family: 'Teko', sans-serif;
+html, body{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
+.link-area {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px;
+  border-radius: 40px;
+  background: tomato;
+}
+
+.link-area a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
 .gg_logo{
-  height: 40px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -41,6 +50,7 @@ html body{
   position: absolute;
   top: 0;
   z-index: -9;
+  font-family: 'Teko', sans-serif;
 }
 
 .video-container video {
@@ -58,6 +68,8 @@ html body{
 
 .navItems{
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .title-1{
@@ -72,7 +84,7 @@ html body{
   color: white;
   font-size: 40px;
   line-height:-20rem;
-  letter-spacing: 15px;
+  letter-spacing: .5rem;
   position: absolute;
   top: 75%;
   left: 11%;
@@ -85,14 +97,131 @@ html body{
 
 .about-container{
   width: 100vw;
-  height: 100vh;
+  height: 90%;
   margin: 1rem;
 }
 
 .about-section-title{
-  width: 100%;
+  /* width: 100%; */
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-holder{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  /* border-radius: 20px; */
+}
+
+.dis{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 20px; */
+  font-weight: 500;
+}
+
+.happening-holder{
+  width: 100vw;
+}
+
+
+.card-body-title{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+  /* border-radius: 10%;
+  overflow: hidden; */
+  border-radius: 5%;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+  background-color: beige;
+  border-radius: 5%;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 5%;
+}
+
+.front {
+  grid-area: frontAndBack;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+  background-color: white;
+  border-radius: 5%;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.img-container {
+  width: 100%;
+  height: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 1.5%;
+  font-size: 50px;
+  background-color: #f4f4f4;
+  color: #49829f;
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  vertical-align: middle;
+  font-family: "Josefin Sans";
+}
+
+.counter-holder{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

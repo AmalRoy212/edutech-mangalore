@@ -11,8 +11,12 @@ html, body{
   margin: 0;
   padding: 0;
   height: 100%;
+  /* background-color: black; */
+  /* color: white; */
 }
-
+.main{
+  /* background-color: black; */
+}
 .link-area {
   position: fixed;
   bottom: 20px;
@@ -49,7 +53,7 @@ html, body{
   height: 100vh;
   position: absolute;
   top: 0;
-  z-index: -9;
+  z-index: -99;
   font-family: 'Teko', sans-serif;
 }
 
@@ -127,7 +131,7 @@ html, body{
   /* border-radius: 20px; */
 }
 .location{
-  background: linear-gradient(white, #49829f)
+  /* background: linear-gradient(white, #49829f) */
 }
 .dis{
   font-family: 'Montserrat', sans-serif;
@@ -349,7 +353,7 @@ div.h4 {
 }
 
 /* linearGradient for texts  */
-.text-bg{
+/* .text-bg{
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 900;
@@ -362,7 +366,7 @@ div.h4 {
   line-height: 1.1;
   margin-left: -15px;
   padding: 5px 0;
-}
+} */
 
 .text-color{
   color: #49829f;
